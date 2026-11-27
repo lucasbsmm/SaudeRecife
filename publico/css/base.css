@@ -1,0 +1,157 @@
+:root {
+  --azul: #1f74c4;
+  --azul-escuro: #165a9c;
+  --marinho: #173f5f;
+  --ceu: #eef5fc;
+  --gelo: #dfeaf5;
+  --linha: #b9d3e8;
+  --campo: #6fb0d4;
+  --texto: #14212e;
+  --texto-suave: #485b6e;
+  --amarelo: #f5c400;
+  --verde: #1b7a4b;
+  --verde-claro: #ddf2e6;
+  --vermelho: #b3261e;
+  --vermelho-claro: #fbe3e1;
+  --branco: #fff;
+
+  --sombra: 0 2px 6px rgb(23 63 95 / 0.16);
+  --raio-campo: 0.875rem;
+  --raio-cartao: 1.125rem;
+
+  --fonte: 'Segoe UI', 'Helvetica Neue', Roboto, system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--texto);
+  background: var(--ceu);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--marinho);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.15rem + 1.6vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: 1.1875rem;
+  font-weight: 700;
+}
+
+a {
+  color: var(--azul-escuro);
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+[tabindex='-1']:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--marinho);
+  outline-offset: 2px;
+}
+
+.barra-superior :focus-visible,
+.botao:focus-visible {
+  outline-color: var(--marinho);
+  box-shadow: 0 0 0 5px var(--branco);
+}
+
+.so-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pular-conteudo {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--marinho);
+  color: var(--branco);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.pular-conteudo:focus {
+  top: 0;
+}
+
+.texto-suave {
+  color: var(--texto-suave);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

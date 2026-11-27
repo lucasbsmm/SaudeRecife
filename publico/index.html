@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Saúde Recife</title>
+  <meta name="description" content="Faça sua pré-triagem e agende consultas em clínicas parceiras do Recife.">
+  <meta name="theme-color" content="#1f74c4">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Saúde Recife">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/icones/logo.svg">
+  <link rel="apple-touch-icon" href="/icones/icone-180.png">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/componentes.css">
+  <link rel="stylesheet" href="/css/paginas.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <p class="aviso-offline" id="aviso-offline" role="status" hidden>Você está sem conexão. Algumas telas podem não carregar.</p>
+
+  <div class="aplicativo" id="aplicativo" data-modo="publico">
+    <header class="barra-superior" id="barra-superior"></header>
+    <main class="conteudo" id="conteudo" tabindex="-1"></main>
+    <nav class="navegacao" id="navegacao" aria-label="Principal"></nav>
+  </div>
+
+  <div class="avisos" id="avisos" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:1rem">O Saúde Recife precisa de JavaScript para funcionar. Ative-o no navegador e recarregue a página.</p></noscript>
+  <script type="module" src="/js/principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Saúde Recife">
+  <circle cx="100" cy="100" r="96" fill="#173f5f"/>
+  <path d="M100 160 C48 124 38 96 38 78 C38 58 53 46 70 46 C84 46 95 54 100 66 C105 54 116 46 130 46 C147 46 162 58 162 78 C162 96 152 124 100 160Z" fill="#ffffff"/>
+  <rect x="90" y="72" width="20" height="46" rx="4" fill="#1f74c4"/>
+  <rect x="77" y="85" width="46" height="20" rx="4" fill="#1f74c4"/>
+</svg>
